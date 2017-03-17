@@ -9,19 +9,19 @@
 wifi.interface=wlan0
 
 # hold precise GC data, and use SMP
-dalvik.vm.dexopt-flags=m=y,u=n
+dalvik.vm.dexopt-flags=m=y,u=y
 
 ro.sf.lcd_density=240
 
 ## Radio stuffs
-#ro.telephony.call_ring.multiple=false
-#ro.telephony.call_ring.delay=3000
-#ro.telephony.call_ring.absent=true
+ro.telephony.call_ring.multiple=false
+ro.telephony.call_ring.delay=3000
+ro.telephony.call_ring.absent=true
 rild.libpath=/system/lib/lge-ril.so
 ro.telephony.ril_class=U2RIL
 
 ro.opengles.version=131072
-dalvik.vm.dexopt-data-only=1
+dalvik.vm.dexopt-data-only=0
 
 ro.com.google.clientidbase=android-lge
 ro.com.google.clientidbase.ms=android-lge
